@@ -10,12 +10,12 @@
 # pragma once
 #endif
 
-#include "json_spirit_value.h"
-#include "json_spirit_error_position.h"
+#include <boost/json/value.hpp>
+#include <boost/json/error_position.hpp>
 #include <iostream>
 
-namespace json_spirit
-{
+namespace boost { namespace json {
+
     // functions to reads a JSON values
 
     bool read( const std::string& s, Value& value );
@@ -57,6 +57,6 @@ namespace json_spirit
     void read_or_throw( std::wstring::const_iterator& begin, std::wstring::const_iterator end, wmValue& value );
 
 #endif
-}
+} }
 
 #endif

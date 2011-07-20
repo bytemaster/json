@@ -1,5 +1,5 @@
-#ifndef JSON_SPIRIT_WRITER
-#define JSON_SPIRIT_WRITER
+#ifndef BOOST_JSON_WRITER
+#define BOOST_JSON_WRITER
 
 //          Copyright John W. Wilkinson 2007 - 2011
 // Distributed under the MIT License, see accompanying file LICENSE.txt
@@ -10,11 +10,11 @@
 # pragma once
 #endif
 
-#include <json_spirit/json_spirit_writer_template.h>
+#include <boost/json/writer_template.hpp>
 #include <iostream>
 
-namespace json_spirit
-{
+namespace boost { namespace json {
+
     // these functions to convert JSON Values to text
 
     void         write( const Value&  value, std::ostream&  os, unsigned int options = 0 );
@@ -43,6 +43,6 @@ namespace json_spirit
     std::wstring write_formatted( const wValue& value );
     std::wstring write_formatted( const wmValue& value );
 #endif
-}
+} }
 
 #endif

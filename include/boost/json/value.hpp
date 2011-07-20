@@ -1,5 +1,5 @@
-#ifndef JSON_SPIRIT_VALUE
-#define JSON_SPIRIT_VALUE
+#ifndef BOOST_JSON_VALUE
+#define BOOST_JSON_VALUE
 
 //          Copyright John W. Wilkinson 2007 - 2011
 // Distributed under the MIT License, see accompanying file LICENSE.txt
@@ -21,8 +21,8 @@
 #include <boost/shared_ptr.hpp> 
 #include <boost/variant.hpp> 
 
-namespace json_spirit
-{
+namespace boost { namespace json { 
+
     enum Value_type{ obj_type, array_type, str_type, bool_type, int_type, real_type, null_type };
 
     struct Null{};
@@ -571,6 +571,7 @@ namespace json_spirit
     {
         return internal_::get_value( *this, internal_::Type_to_type< T >() );
     }
-}
+
+} } // boost::json
 
 #endif

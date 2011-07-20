@@ -6,8 +6,8 @@
 
 // json spirit version 4.04
 
-#include "json_spirit_value.h"
-#include "json_spirit_error_position.h"
+#include <boost/json/value.hpp>
+#include <boost/json/error_position.hpp>
 
 //#define BOOST_SPIRIT_THREADSAFE  // uncomment for multithreaded use, requires linking to boost.thread
 
@@ -31,8 +31,8 @@
     #define spirit_namespace boost::spirit
 #endif
 
-namespace json_spirit
-{
+namespace boost { namespace json {
+
     const spirit_namespace::int_parser < boost::int64_t >  int64_p  = spirit_namespace::int_parser < boost::int64_t  >();
     const spirit_namespace::uint_parser< boost::uint64_t > uint64_p = spirit_namespace::uint_parser< boost::uint64_t >();
 
@@ -639,6 +639,6 @@ namespace json_spirit
 
         add_posn_iter_and_read_range_or_throw( mp_iters.begin_, mp_iters.end_, value );
     }
-}
+} } // boost::json
 
 #endif

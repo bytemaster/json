@@ -1,5 +1,5 @@
-#ifndef JSON_SPIRIT
-#define JSON_SPIRIT
+#ifndef BOOST_JSON_JSON_HPP
+#define BOOST_JSON_JSON_HPP
 
 //          Copyright John W. Wilkinson 2007 - 2011
 // Distributed under the MIT License, see accompanying file LICENSE.txt
@@ -10,9 +10,9 @@
 # pragma once
 #endif
 
-#include "json_spirit_value.h"
-#include "json_spirit_reader.h"
-#include "json_spirit_writer.h"
-#include "json_spirit_utils.h"
+#include <boost/json/value.hpp>
+#include <boost/json/reader.hpp>
+#include <boost/json/writer.hpp>
+#include <boost/json/utils.hpp>
 
 #endif

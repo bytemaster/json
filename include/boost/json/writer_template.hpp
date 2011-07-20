@@ -6,15 +6,15 @@
 
 // json spirit version 4.04
 
-#include <json_spirit/json_spirit_value.h>
+#include <boost/json/value.hpp>
 
 #include <cassert>
 #include <sstream>
 #include <iomanip>
 #include <boost/io/ios_state.hpp>
 
-namespace json_spirit
-{
+namespace boost { namespace json {
+
     enum Output_options{ pretty_print = 0x01,   // Add whitespace to format the output nicely.
 
                          raw_utf8 = 0x02,       // This prevents non-printable characters from being escapted using "\uNNNN" notation.
@@ -345,6 +345,6 @@ namespace json_spirit
 
         return os.str();
     }
-}
+} } // boost::json
 
 #endif
