@@ -1,12 +1,12 @@
 include_directories( include )
 
 SET( sources 
-            src/json_spirit_reader.cpp
-            src/json_spirit_value.cpp
-            src/json_spirit_writer.cpp
+            src/reader.cpp
+            src/value.cpp
+            src/writer.cpp
              )
 
-SETUP_LIBRARY( json_spirit SOURCES ${sources}
+SETUP_LIBRARY( boost_json SOURCES ${sources}
                              LIBRARIES 
                              LIBRARY_TYPE STATIC )
 
