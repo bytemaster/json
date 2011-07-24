@@ -1,0 +1,10 @@
+/**
+    @mainpage
+
+    This is a fork of json_spirit that will eventually be replaced with a new
+    JSON parser based upon Boost.Spirit Qi and Boost.Variant.  For now it contains
+    modifications to JSON Spirit to put it in the boost::json namespace and adds 
+    helper methods/operators to boost::json::Value.
+
+    This code is currently used by <a href="http://bytemaster.github.com/Boost.RPC">Boost.RPC</a>.
+*/
